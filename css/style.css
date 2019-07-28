@@ -1,0 +1,214 @@
+body {
+    direction: rtl;
+}
+
+.greenColor {
+    color: #2ed47a;
+}
+
+.greenBack {
+    background-color: #2ed47a;
+}
+
+.gray {
+    background-color: #F5F6F8;
+}
+
+.black {
+    color: #192A3E;
+}
+
+.fisrtForm,
+.secondForm,
+.deal,
+.working {
+    padding: 100px 0;
+}
+
+.fisrtForm form,
+.secondForm form,
+.deal form {
+    background: #F5F6F8;
+    border-radius: 5px;
+    width: 470px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.fisrtForm form h4,
+.secondForm form h4,
+.deal form h4 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: normal;
+    color: #192A3E;
+}
+
+.fisrtForm form .form-group,
+.secondForm form .form-group,
+.deal form .form-group {
+    margin: 30px auto;
+}
+
+.fisrtForm form .form-group label,
+.secondForm form .form-group label,
+.deal form .form-group label {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: normal;
+    color: #192A3E;
+}
+
+.fisrtForm form .form-group .form-control,
+.secondForm form .form-group .form-control {
+    background: #FFFFFF;
+    border: 2px solid rgba(51, 77, 110, 0.5);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #334D6E;
+}
+
+.fisrtForm form .btn,
+.secondForm form .btn,
+.deal form .btn,
+.working form .btn {
+    color: #fff;
+    width: 100%;
+    background: #2ED47A;
+    border-radius: 3px;
+}
+
+.deal form .form-group i {
+    position: relative;
+    top: -30px;
+    right: 20px;
+}
+
+.toggle>.toggle-group {
+    background: white;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    color: #666;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2ed47a;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2ED47A;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.custom-control {
+    width: 90%;
+}
+
+.day {
+    padding: 30px;
+    margin: 30px auto;
+    width: 100%;
+    background: #FFFFFF;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.working .form-group {
+    text-align: center;
+}
+
+.working .form-control {
+    width: 40%;
+    display: inline;
+    background: #FFFFFF;
+    border: 1px solid rgba(51, 77, 110, 0.5);
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #334D6E;
+    border-radius: 10px;
+}
+
+.secondForm,
+.deal,
+.working {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .fisrtForm form,
+    .secondForm form,
+    .deal form {
+        background: #F5F6F8;
+        border-radius: 5px;
+        width: 100%;
+        padding: 50px;
+        margin: 0 auto;
+    }
+}
